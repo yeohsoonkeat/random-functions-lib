@@ -22,7 +22,7 @@ import {add} from 'random-functions-library'
 
 const sum = add(1,9)
 ```
-### Usage in normal ES6
+### Usage in normal ES5
 
 ```javascript
 const rfl = require('random-functions-library') //rfl as in random functions library
