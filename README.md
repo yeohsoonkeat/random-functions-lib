@@ -7,3 +7,16 @@
 
 A collection of random function in a npm package
 
+
+## Usage
+
+```javascript
+import {add} from 'random-functions-library
+
+const sum = add(1,9)
+```
+
+## LICENSE
+
+MIT
+
