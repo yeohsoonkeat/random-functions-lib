@@ -4,6 +4,7 @@ import welcome from  './welcome'
 import div from './div'
 import mul from './mul'
 import hello from './hello'
+import mod from './mod'
 
 export {
     add,
@@ -11,5 +12,7 @@ export {
     welcome,
     mul,
     div,
-    hello
+    hello,
+    mod
 }
+
