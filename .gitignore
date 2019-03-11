@@ -3,4 +3,4 @@ lib
 .nyc_output
 *.log
 coverage
-package.lock.json
+package-lock.json
