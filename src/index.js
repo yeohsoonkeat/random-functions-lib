@@ -4,6 +4,8 @@ import div from './div'
 import mul from './mul'
 import hello from './hello'
 import mod from './mod'
+import mod from './mod'
+
 
 export {
     add,
@@ -11,5 +13,6 @@ export {
     mul,
     div,
     hello,
-    mod
+    mod,
+    mod,
 }
