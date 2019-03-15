@@ -8,10 +8,13 @@
     "test": "cross-env NODE_ENV=test nyc ava",
     "lint": "eslint ./src",
     "prebuild": "rimraf lib",
-    "build": "babel src -d lib",
     "commit": "git-cz",
     "validate": "npm-run-all lint test build",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "build": "npm-run-all --parallel build:*",
+    "build:main": "babel src -d lib",
+    "build:umd": "webpack --output-filename index.umd.js",
+    "build:umd.min": "webpack --output-filename index.umd.min.js -p"
   },
   "repository": {
     "type": "git",
@@ -45,7 +48,9 @@
     "nyc": "13.3.0",
     "rimraf": "2.6.3",
     "semantic-release": "^15.13.3",
-    "validate-commit-msg": "2.14.0"
+    "validate-commit-msg": "2.14.0",
+    "webpack": "4.29.6",
+    "webpack-cli": "3.2.3"
   },
   "config": {
     "ghooks": {
