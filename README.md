@@ -12,7 +12,7 @@ A collection of random function in a npm package using es6
 
 ### Module installation
 ```
-npm install --save-dev random-functions-library
+npm install --save random-functions-library
 
 ```
 ### Usage in ES6 enviroment
